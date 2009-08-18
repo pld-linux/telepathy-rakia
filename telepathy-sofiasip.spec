@@ -1,12 +1,12 @@
 Summary:	SIP connection manager for the Telepathy
 Summary(pl.UTF-8):	Zarządca połączeń SIP dla Telepathy
 Name:		telepathy-sofiasip
-Version:	0.4.5
+Version:	0.5.17
 Release:	1
 License:	LGPL v2.1
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/tp-sofiasip/%{name}-%{version}.tar.gz
-# Source0-md5:	d949ce77c36f7b0bb01b3003705c1db4
+Source0:	http://telepathy.freedesktop.org/releases/telepathy-sofiasip/%{name}-%{version}.tar.gz
+# Source0-md5:	ac2d6338781cf7a458b8b4150f9b81d8
 URL:		http://sourceforge.net/projects/tp-sofiasip/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.8
@@ -16,7 +16,7 @@ BuildRequires:	libtool
 BuildRequires:	openssl-devel
 BuildRequires:	pkgconfig
 BuildRequires:	python
-BuildRequires:	sofia-sip-devel >= 1.12.5
+BuildRequires:	sofia-sip-devel >= 1.12.10
 BuildRequires:	telepathy-glib-devel >= 0.5.13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -51,6 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog
-%attr(755,root,root) %{_bindir}/telepathy-sofiasip
+%attr(755,root,root) %{_libexecdir}/telepathy-sofiasip
 %{_datadir}/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.sofiasip.service
 %{_datadir}/telepathy/managers/sofiasip.manager
+%{_mandir}/man8/telepathy-sofiasip.8*
