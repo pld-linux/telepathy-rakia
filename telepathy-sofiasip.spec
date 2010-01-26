@@ -1,12 +1,12 @@
 Summary:	SIP connection manager for the Telepathy
 Summary(pl.UTF-8):	Zarządca połączeń SIP dla Telepathy
 Name:		telepathy-sofiasip
-Version:	0.5.17
+Version:	0.5.18
 Release:	1
 License:	LGPL v2.1
 Group:		Libraries
 Source0:	http://telepathy.freedesktop.org/releases/telepathy-sofiasip/%{name}-%{version}.tar.gz
-# Source0-md5:	ac2d6338781cf7a458b8b4150f9b81d8
+# Source0-md5:	84fad8075833d2e666f0e3b2a64d6e27
 URL:		http://sourceforge.net/projects/tp-sofiasip/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.8
