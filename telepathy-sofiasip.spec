@@ -1,12 +1,12 @@
 Summary:	SIP connection manager for the Telepathy
 Summary(pl.UTF-8):	Zarządca połączeń SIP dla Telepathy
 Name:		telepathy-sofiasip
-Version:	0.5.18
+Version:	0.6.4
 Release:	1
 License:	LGPL v2.1
 Group:		Libraries
 Source0:	http://telepathy.freedesktop.org/releases/telepathy-sofiasip/%{name}-%{version}.tar.gz
-# Source0-md5:	84fad8075833d2e666f0e3b2a64d6e27
+# Source0-md5:	b17aba4ec655b7e8def45c3b8b7afac6
 URL:		http://sourceforge.net/projects/tp-sofiasip/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.8
@@ -25,6 +25,18 @@ This package provides SIP functionality for Telepathy.
 
 %description -l pl.UTF-8
 Ten pakiet udostępnia funkcjonalność SIP dla Telepathy.
+
+%package devel
+Summary:	Header files for telepathy-sofiasip library
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki telepathy-sofiasip
+Group:		Development/Libraries
+Requires:	%{name} = %{version}-%{release}
+
+%description devel
+Header files for telepathy-sofiasip library.
+
+%description devel -l pl.UTF-8
+Pliki nagłówkowe biblioteki telepathy-sofiasip.
 
 %prep
 %setup -q
@@ -55,3 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.sofiasip.service
 %{_datadir}/telepathy/managers/sofiasip.manager
 %{_mandir}/man8/telepathy-sofiasip.8*
+
+%files devel
+%defattr(644,root,root,755)
+%{_includedir}/%{name}-0.6/tpsip
