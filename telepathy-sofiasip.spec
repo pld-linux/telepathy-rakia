@@ -12,7 +12,9 @@ BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.8
 BuildRequires:	dbus-glib-devel >= 0.61
 BuildRequires:	glib2-devel >= 1:2.4
+BuildRequires:	gtk-doc-automake
 BuildRequires:	libtool
+BuildRequires:	libxslt-progs
 BuildRequires:	openssl-devel
 BuildRequires:	pkgconfig
 BuildRequires:	python
