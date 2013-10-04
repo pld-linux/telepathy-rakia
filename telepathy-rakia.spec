@@ -1,15 +1,16 @@
 Summary:	SIP connection manager for the Telepathy
 Summary(pl.UTF-8):	Zarządca połączeń SIP dla Telepathy
 Name:		telepathy-rakia
-Version:	0.7.5
+Version:	0.8.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://telepathy.freedesktop.org/releases/telepathy-rakia/%{name}-%{version}.tar.gz
-# Source0-md5:	390bb7059257cbf16a52a5d9ef4547b6
+# Source0-md5:	09038d4625fcf81e9d3228ebf18bc378
 URL:		http://tp-sofiasip.sourceforge.net/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake >= 1:1.9
+BuildRequires:	dbus-devel >= 0.60
 BuildRequires:	dbus-glib-devel >= 0.60
 BuildRequires:	glib2-devel >= 1:2.30
 BuildRequires:	gtk-doc-automake
