@@ -5,9 +5,9 @@ Version:	0.8.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://telepathy.freedesktop.org/releases/telepathy-rakia/%{name}-%{version}.tar.gz
+Source0:	https://telepathy.freedesktop.org/releases/telepathy-rakia/%{name}-%{version}.tar.gz
 # Source0-md5:	09038d4625fcf81e9d3228ebf18bc378
-URL:		http://tp-sofiasip.sourceforge.net/
+URL:		https://telepathy.freedesktop.org/components/telepathy-rakia/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	dbus-devel >= 0.60
@@ -80,4 +80,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%{_includedir}/%{name}-0.7
+%{_includedir}/telepathy-rakia-0.7
